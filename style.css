@@ -1,0 +1,734 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navigation{
+    /* background-color: dodgerblue; */
+    background-image: linear-gradient(dodgerblue, #044b91);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navigation > ul{
+    display: flex;
+    margin-right: 50px;
+}
+
+#navigation > ul > li{
+    list-style: none;
+    margin: 0px 5px;
+    margin-left: -4px;
+    padding: 15px  0px;
+}
+
+#navigation > ul > li > a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    border-right: 1px solid white;
+    padding: 16px 20px;
+    transition: 0.5s;
+}
+
+ #navigation > ul > li:first-child > a{
+    border-left: 1px solid white;
+ }
+
+
+ #navigation > ul > li:hover > a{
+    background-color: #104981;
+ }
+
+.logo > h2{
+    color: white;
+    margin-left: 50px;
+}
+
+
+
+
+
+/* dropdown start----------- */
+
+.dropdown{ 
+    opacity: 0;
+    visibility: hidden;
+    background-color: dodgerblue;
+    text-align: center;
+    margin-top: 15px;
+    width: 172px;
+    position: absolute;
+    /* display: none; */
+    transition: 0.5s;
+    box-shadow: 5px 5px 9px black;
+    transform: scaley(0);
+    transform-origin: top;
+}
+
+.dropdown > li{
+    list-style: none;
+    padding: 10px 0px;
+    border-bottom: 1px solid white;
+}
+
+.dropdown > li:hover{
+    background-color: #104981;
+}
+
+.dropdown > li:first-child{
+    border-top: 1px solid white;
+}
+
+.dropdown > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+#navigation > ul > li:hover > .dropdown {
+    /* display: block; */
+    opacity: 1;
+    visibility: visible;
+    transform: scaley(1);
+}
+
+.logo_frist_leter{
+    color: yellow;
+}
+
+
+
+
+
+/* hero area coad start hare */
+
+#main_header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.137), rgba(0, 0, 0, 0.603)), url("img/web\ header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 90vh;
+}
+
+.header_container{
+    padding-top: 100px;
+}
+
+.header_container > h1{
+    width: 500px;
+    margin: 20px auto;
+    background-color: #0d427781;
+    font-size: 50px;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+}
+
+.header_container > button{
+    font-size: 20px;
+    padding: 15px 25px;
+    margin-top: 20px;
+    background-color: #04203ba9;
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+    border: 3px solid green;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.header_container > button:hover{
+    background-color: #0000002f;
+}
+
+.header_container > h4{
+    font-size: 25px;
+    color: #2c2b2b;
+}
+
+.header_container > h5{
+    font-size: 25px;
+    color: #222222;
+    margin-bottom: 50px;
+}
+
+.social_icon > a{
+    color: white;
+    text-decoration: none;
+}
+
+.social_icon > a >i{
+    width: 50px;
+    height: 50px;
+    line-height: 1.6;
+    margin: 10px 5px;
+    font-size: 30px;
+    background-color: #00000000;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.social_icon > a >:hover{
+    background-color: #104981;
+    /* border-color: green;*/
+    border: 2px solid green;
+    transform: rotate(360deg);
+} 
+
+
+
+/* frist saction start */
+
+#container{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.box{
+    width: 300px;
+    text-align: center;
+    padding: 30px 10px;
+    transition: 0.5s;
+}
+
+.box > i{
+    font-size: 50px;
+}
+
+.box > h2{
+    margin: 15px 0;
+}
+
+.box:hover{
+    box-shadow: 3px 3px 10px gray;
+}
+
+
+/* .second_box{
+    width: 300px;
+    text-align: center;
+    padding: 30px 10px;
+    transition: 0.5s;
+}
+.second_box > i {
+    font-size: 50px;
+}
+.second_box > h2{
+    margin: 15px 0;
+}
+.second_box:hover{
+    box-shadow: 3px 3px 10px gray;
+}
+.third_box{
+    width: 300px;
+    text-align: center;
+    padding: 30px 10px;
+    transition: 0.5s;
+}
+.third_box > i{
+    font-size: 50px;
+}
+.third_box >h2{
+    margin: 15px 0;
+}
+.third_box:hover{
+    box-shadow: 3px 3px 10px gray;
+} */
+
+
+
+
+
+/* second section coad start hare */
+
+.smart_area_title > h2{
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.smart_area_title >h2::after {
+    content: '';
+    top: 55px;
+    left: 48%;
+    width: 80px;
+    height: 5px;
+    background-color: #830808;
+    position: absolute;
+}
+
+.smart_area{
+    display: flex;
+    margin: auto;
+    width: 1000px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.smart_area_text{
+    width: 500px;
+}
+
+.smart_area_text > h2{
+    margin: 20px 0;
+}
+
+.smart_area_text > h4{
+    color: #830808;
+}
+
+.smart_area_text >a{
+    text-decoration: none;
+    background-color: #830808;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin: 20px 0;
+    display: inline-block;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.smart_area_text > a:hover{
+    background-color: #490707;
+}
+
+
+
+
+/* third section start here */
+
+
+#third_section{
+    background-color: #FAFAFA;
+}
+
+.service_area_title{
+    text-align: center;
+    padding: 40px 0 60px 0;
+}
+
+.service_area_title > h2{
+    font-size: 40px;
+}
+.each_service_parent{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    padding-bottom: 60px;
+    
+}
+.service_area{
+    width: 1000px;
+    margin: auto;
+}
+.each_service{
+    background-color: lightblue;
+    text-align: center;
+    padding: 30px 0;
+    transition: 0.5s;
+}
+.each_service:hover{
+    background-color: #bfeaf8;
+}
+.each_service > i{
+    font-size: 40px;
+    color: #830808cb;
+}
+.each_service > h3{
+    margin: 15px 0;
+}
+
+/* forth section start */
+.forth_section{
+    background-color: whitesmoke;
+}
+.priceing_area_container{
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.price_area_parent{
+    display: flex;
+    justify-content: space-between;
+}
+.price_title{
+    text-align: center;
+    font-size: 35px;
+    padding: 50px 0;
+}
+.single_card_image{
+    width: 310px;
+}
+.single_card_image > img{
+    max-width: 100%;
+}
+.single_card{
+    width: 310px;
+    box-shadow: 5px 5px 10px gray;
+}
+.single_card > h3{
+    margin: 10px 0;
+    font-size: 25px;
+}
+.month_pricing{
+    border-top: 1px dashed gray;
+    border-bottom: 1px dashed gray;
+    padding: 15px 0;
+    margin: 15px 20px;
+}
+.month_pricing > .month_pricing_span1{
+    font-size: 25px;
+    
+}
+.month_pricing >.month_pricing_span2{
+    color: gray;
+}
+.single_card > button{
+    background-color: #830808;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+} 
+.single_card > button:hover{
+    background-color: #83080800;
+    color: black;
+   margin: auto;
+}
+.single_card > a{
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+
+/* testomonial title start */
+
+#rating_section{
+    background-color: bisque;
+}
+.testo_container{
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.testomonial_title{
+    text-align: center;
+    padding: 50px 0;
+}
+.testomonial_title h2{
+     font-size: 35px;
+     margin-bottom: 10px;
+}
+.testomonial_title h4{
+    color: gray;
+    letter-spacing: 0.3em;
+}
+.testo_single_card_parent{
+    display: grid ;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 25px;
+}
+.testo_single_cird{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+}
+.testoimage_div{
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.testoimage_div img{
+    max-width: 100%;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+.testo_span1{
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.icons{
+    color: 	#ffa534;
+    margin-top: 10px;
+}
+
+
+
+/* paralax sectiion start */
+
+
+#paralax_section{
+    background-image: url('img/parallax.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 80px 0;
+}
+.paralax-parent{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+}
+.paralax_icon i{
+    font-size: 40px;
+}
+
+.paralax_icon h2{
+    font-size: 40px;
+}
+
+
+/* block section start */
+
+
+.juabyer{
+    text-align: center;
+    padding: 50px 0;
+}
+.juabyer h2{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.juabyer h4{
+    color: gray;
+    letter-spacing: 0.3em;
+}
+
+
+
+.block_container{
+    width: 1000px;
+    margin: auto;
+}
+.blog_itemm_parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    padding-bottom: 100px
+}
+.block_image{
+    max-width: 100%;
+    height: 250px;
+    transition: 0.5s;
+}
+
+
+.block_icons{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.block_image_icon_div{
+    position: relative;
+    overflow: hidden;
+}
+.block_image_icon_div:hover .block_icons{
+    opacity: 1;
+    background-color: #0000006e;
+}
+.block_image_icon_div:hover .block_image{
+    transform: scale(1.5);
+}
+.block_icons i{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.single_item_text{
+    text-align: center;
+    margin: 10px 0;
+}
+.single_item_text p{
+    margin-top: 10px;
+    color: #696969a8;
+}
+
+
+
+/* contact section start  */
+
+
+
+.head_contact{
+     text-align: center;
+    padding: 50px 0;
+ }
+ .head_contact h2{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.head_contact h4{
+    color: gray;
+    letter-spacing: 0.3em;
+}
+
+
+.contact_container{
+    width: 1000px;
+    margin: auto;padding-bottom: 100px;
+}
+.form_Parent{
+    background-color: #EAECF0;
+    display: flex;
+}
+.fullname_email_parent{
+    display: flex;
+}
+.fullname_email_parent input{
+    width: 200px;
+    height: 40px;
+    margin: 0 20px;
+    border: none;
+    padding: 0 10px;
+}
+.fullname_email_parent h4{
+    margin: 40px 10px 20px 10px;
+}
+.form_tag{
+    width: 600px;
+}
+.sub_inp_text{
+    margin: 20px 20px 10px 20px;
+}
+.sub_inp{
+    width: 85%;
+    height: 40px;
+    margin: 0 20px;
+    border: none;
+    padding: 0 10px;
+}
+.form_textarea{
+    width: 85%;
+    height: 100px;
+    border: none;
+    margin: 0 20px;
+    padding: 5px 10px;
+}
+.font_button{
+    background-color: #3252AF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0 0 20px;
+    cursor: pointer;
+}
+.font_address_parent{
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-around;
+}
+.form_single_address{
+    text-align: center;
+}
+.form_single_address i{
+    background-color: #3252AF;
+    color: white;
+    padding: 20px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.form_single_address span{
+    font-weight: bold;
+}
+
+
+/* Foter section start  */
+
+
+footer{
+    background-color: #023364;
+    color: gray;
+}
+.footer_container{
+    width: 1000px;
+    margin: auto;
+}
+.foter_singlitem_parent{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_single_item{
+    width: 220px;
+    overflow: hidden;
+}
+.footer_single_item h3{
+    color: white;
+    margin: 50px 0 20px 0;
+}
+.footer_single_item i{
+    color: white;
+}
+.footerfrist_div01{
+    margin: 20px;
+}
+.futar_p2{
+    margin: 10px 0;
+}
+.foter_singlitem_parent .footer_single_item:nth-child(2) p{
+    margin: 10px 0;
+}
+.foter_singlitem_parent .footer_single_item:nth-child(3) p{
+    margin: 10px 0;
+}
+.foter_singlitem_parent .footer_single_item:nth-child(4) p{
+    margin: 10px 0;
+}
+.foter_singlitem_parent .footer_single_item a{
+    text-decoration: none;
+    color: brown;
+}
+.footr_menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.footr_menu ul li{
+    margin: 20px;
+}
+.footr_menu ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+}
+.footr_menu p{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.footr_menu span{
+    color: brown;
+}
+hr{
+    margin-top: 40px;
+}
